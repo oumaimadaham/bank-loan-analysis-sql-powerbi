@@ -37,3 +37,121 @@ However, banks must carefully **assess risk** and borrowers must understand **te
 
 ##  SQL Analysis
 All queries are available in **`sql/loan_dashboard_queries.sql`**.
+
+## Extracted Metrics
+- **Overall KPIs**
+  - Total Loan Applications
+  - Total Funded Amount
+  - Total Amount Received
+  - Average Interest Rate
+  - Average Debt-to-Income Ratio (DTI)
+
+- **Time-based Metrics**
+  - Month-to-Date (MTD) statistics:
+    - MTD Loan Applications
+    - MTD Funded Amount
+    - MTD Amount Received
+    - MTD Average Interest Rate
+    - MTD Average DTI
+  - Previous Month (PMTD) statistics for comparison
+  - Month-over-Month (MoM) Growth:
+    - MoM Loan Applications
+    - MoM Funded Amount
+    - MoM Amount Received
+    - MoM Average Interest Rate
+    - MoM Average DTI
+      
+ -  **Loan Quality Metrics**
+    - Good Loan Applications (Fully Paid, Current)
+    - Bad Loan Applications (Charged Off)
+    - Good Loan % vs Bad Loan %
+
+ - **Borrower Segmentation**
+   - Loan distribution by:
+      - State
+      - Term
+      - Purpose
+      - Loan Status
+      - Employment length
+      - Home ownership
+      - Grade & Sub Grade
+    
+  ##  Power BI Dashboard
+The SQL results are visualized in Power BI to create an **interactive dashboard**. 
+
+###  Dashboard 1: Overview & Key KPIs
+
+**Key Visuals**
+- **Total Loan Applications** – total number of loans issued  
+- **Total Funded Amount** – total principal funded by the bank  
+- **Total Amount Received** – repayments received from borrowers  
+- **Average Interest Rate** – average rate applied across loans  
+- **Average Debt-to-Income Ratio (DTI)** – measure of borrower repayment capacity
+
+**👥 Borrower Demographics**
+
+Visuals that segment borrowers by personal and loan-related attributes:  
+- **By Purpose** – reasons for borrowing (debt consolidation, credit card, education, etc.)  
+- **By Employment Length** – stability of borrower employment  
+- **By Loan Term** – repayment duration (36 months vs 60 months)  
+- **By Home Ownership** – type of housing situation (rent, own, mortgage, etc.)
+
+**🗺 Geographic Distribution**
+
+A **map visualization** showing the number of loan applications and amounts distributed **by U.S. state**.  
+
+These visuals allow financial institutions to:
+- Monitor portfolio growth and repayment inflows over time  
+- Identify regional lending patterns  
+- Understand borrower profiles and behaviors
+  
+*Dashboard Preview:*  
+![Loan Bank Dashboard 1](screenshots/dashboard1-loan-bank.png)
+
+
+### Dashboard 2: Summary
+
+This dashboard focuses on **loan quality and repayment status**.  
+
+**Key Visuals**
+- **Good Loan % vs Bad Loan % (Donut Chart)** – compares the proportion of successfully repaid/current loans vs defaulted (charged off) loans.  
+- **Loan Status Table** – provides a detailed breakdown of loan applications, funded amounts, amounts received,interest rate, dti, and risk metrics across different statuses (Fully Paid, Current, Charged Off).  
+
+These visuals allow banks to:
+- Assess the **overall health** of the loan portfolio  
+- Track the proportion of loans at risk (defaults)  
+- Monitor repayment trends across different loan categories  
+
+*Dashboard Preview:*  
+![Loan Bank Dashboard 2](screenshots/dashboard2-loan-summary.png)
+
+### Dashboard 3: Loan Details  
+
+This dashboard provides a **granular, record-level view of loan applications** to support auditing, compliance, and borrower-level analysis.  
+
+**Key Visuals**  
+- **Loan ID** – unique identifier for each loan application  
+- **Purpose** – borrower’s reason for taking the loan  
+- **Home Ownership** – borrower’s housing status (rent, own, mortgage)  
+- **Grade & Sub-Grade** – credit risk classification assigned by the bank  
+- **Issue Date** – loan origination date for time-based analysis  
+- **Total Funded Amount** – principal amount funded by the bank  
+- **Installments (Sum)** – total repayment obligations for the borrower  
+- **Interest Rate** – annual borrowing cost applied to the loan  
+- **Total Amount Received** – repayments collected to date  
+
+These visuals allow financial institutions to:  
+- Drill down into **individual loans** for detailed monitoring  
+- Compare **funded vs received amounts** to check repayment progress  
+- Analyze borrower characteristics to improve **risk assessment**  
+- Ensure **transparency and accountability** in loan management 
+
+*Dashboard Preview:*  
+![Loan Bank Dashboard 3](screenshots/dashboard3-loan-details.png)
+
+##  Tools Used
+- **SQL (MySQL/SQL Server)** – Data analysis  
+- **Power BI** – Dashboard & Visualization  
+- **CSV dataset** – Loan records  
+
+---
