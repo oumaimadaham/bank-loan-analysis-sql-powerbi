@@ -156,9 +156,13 @@ These visuals allow financial institutions to:
 
 ##  Key Findings
 **1.** Good loans dominate the portfolio; bad loans are low.
+
 **2.** Debt consolidation and credit card loans are the most common.
+
 **3.** High loan volumes in CA, TX, FL, and NY.
+
 **4.** Borrowers with 10+ years of employment have higher funded amounts.
+
 **5.** Peak loan activity are in November and December.
 
 ---
