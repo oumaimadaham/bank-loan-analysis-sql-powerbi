@@ -206,3 +206,9 @@ This file contains the results of all SQL queries from `bank_loan_queries.sql`.
 | AZ    | 833   | 9,206,000  | 10,041,986 |
 | VA    | 1375  | 15,982,650 | 17,711,443 |
 | MT    | 79    | 829,525    | 892,047    |
+
+## Loan Metrics by Term
+|Term|Total_Loan_Application|Total_Funded_Aount|Total_Received_Amount|
+|-------|-------|-------|-------|
+|36 months|28237|273041225|294709458|
+|60 months|10339|162715850|178361475|
