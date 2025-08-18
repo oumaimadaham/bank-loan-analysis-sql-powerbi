@@ -106,7 +106,7 @@ These visuals allow financial institutions to:
 - Understand borrower profiles and behaviors
   
 *Dashboard Preview:*  
-![Loan Bank Dashboard 1](screenshots/dashboard1-loan-bank.png)
+![Bank Loan Dashboard 1](dashboard1-bank-loan.png)
 
 
 ### Dashboard 2: Summary
