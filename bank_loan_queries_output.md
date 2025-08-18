@@ -70,7 +70,7 @@ This file contains the results of all SQL queries from `bank_loan_queries.sql`.
 |--------|-------|
 |1 | 13.3 |
 
-## Average DTI  Rate Month-to-Date (MTD)
+## Average DTI Rate Month-to-Date (MTD)
 | | MTD_Average_DTI_Rate |
 |--------|-------|
 |1 | 13.7 |
@@ -127,7 +127,13 @@ This file contains the results of all SQL queries from `bank_loan_queries.sql`.
 |2|Current|1098|18866500|24199914|15.1|14.7|
 |3|Charged Off|5333|65532225|37284763|13.9|14|
 
+## Loan Status Metrics Month-to-Date (MTD)
 
+| | loan_status|MTD_Total_Funded_Amount|MTD_Total_Received_Amount|
+|--------|-------|--------|-------|
+|1| Fully Paid|41302025|47815851|
+|2|Current|3946625|4934318|
+|3|Charged Off|8732775|5324211|
 
 
 
