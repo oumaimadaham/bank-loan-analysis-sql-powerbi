@@ -65,7 +65,19 @@ This file contains the results of all SQL queries from `bank_loan_queries.sql`.
 |--------|-------|
 |1 | 11.9 |
 
+## Average DTI 
+| | Average_DTI |
+|--------|-------|
+|1 | 13.3 |
 
+## Average DTI  Rate Month-to-Date (MTD)
+| | MTD_Average_DTI_Rate |
+|--------|-------|
+|1 | 13.7 |
 
+## Average DTI Rate Previous Month (PMTD)
+| | PMTD_Average_DTI_Rate |
+|--------|-------|
+|1 | 13.3 |
 
 
