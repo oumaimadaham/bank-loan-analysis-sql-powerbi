@@ -19,6 +19,10 @@ FROM Loan
 WHERE MONTH(issue_date) = 11
   AND YEAR(issue_date) = 2021;
 
+-- Total Amount Received
+SELECT SUM(total_payment) AS Total_Amount_Received 
+FROM Loan;
+
 -- Total Amount Received Month-to-Date (MTD)
 SELECT SUM(total_payment) AS MTD_Total_Amount_Received
 FROM Loan
