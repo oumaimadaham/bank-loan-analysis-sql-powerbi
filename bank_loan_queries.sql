@@ -3,6 +3,18 @@
 SELECT COUNT(ID) AS Total_Loan_Applications
 FROM Loan;
 
+-- Total Loan Applications Month-to-Date (MTD)
+SELECT COUNT(ID) AS MTD_Total_Applications
+FROM Loan
+WHERE MONTH(issue_date) = 12
+  AND YEAR(issue_date) = 2021;
+
+-- Total Loan Applications Previous Month (PMTD)
+SELECT COUNT(ID) AS PMTD_Total_Applications
+FROM Loan
+WHERE MONTH(issue_date) = 11
+  AND YEAR(issue_date) = 2021;
+
 -- Total Funded Amount
 SELECT SUM(loan_amount) AS Total_Loan_Amount 
 FROM Loan;
