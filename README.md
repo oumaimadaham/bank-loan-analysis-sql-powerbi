@@ -123,7 +123,7 @@ These visuals allow banks to:
 - Monitor repayment trends across different loan categories  
 
 *Dashboard Preview:*  
-![Loan Bank Dashboard 2](screenshots/dashboard2-loan-summary.png)
+![Bank Loan Dashboard 2](dashboard2-bank-loan.png)
 
 ### Dashboard 3: Loan Details  
 
