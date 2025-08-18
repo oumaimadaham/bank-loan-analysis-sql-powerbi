@@ -147,7 +147,7 @@ These visuals allow financial institutions to:
 - Ensure **transparency and accountability** in loan management 
 
 *Dashboard Preview:*  
-![Loan Bank Dashboard 3](screenshots/dashboard3-loan-details.png)
+![Bank Loan Dashboard 3](dashboard3-bank-loan.png)
 
 ##  Tools Used
 - **SQL (MySQL/SQL Server)** – Data analysis  
