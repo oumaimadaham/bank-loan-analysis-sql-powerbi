@@ -86,8 +86,8 @@ This file contains the results of all SQL queries from `bank_loan_queries.sql`.
 | 33243|
 
 ## Good Loan Funded Amount
-| | Good_Loan_Funded_Amount|
-|--------|-------|
+| Good_Loan_Funded_Amount|
+|-------|
 |1 | 370224850|
 
 ## Good Loan Received Amount
@@ -106,9 +106,9 @@ This file contains the results of all SQL queries from `bank_loan_queries.sql`.
 | 5333|
 
 ## Bad Loan Funded Amount
-| | Bad_Loan_Funded_Amount|
-|--------|-------|
-|1 | 65532225|
+| Bad_Loan_Funded_Amount|
+|-------|
+| 65532225|
 
 ## Bad Loan Received Amount
 | Bad_Loan_Received_Amount|
