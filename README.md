@@ -152,6 +152,6 @@ These visuals allow financial institutions to:
 ##  Tools Used
 - **SQL (MySQL/SQL Server)** – Data analysis  
 - **Power BI** – Dashboard & Visualization  
-- **CSV dataset** – Loan records  
+- **xlsx dataset** – Loan records  
 
 ---
