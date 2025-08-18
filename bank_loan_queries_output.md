@@ -119,3 +119,15 @@ This file contains the results of all SQL queries from `bank_loan_queries.sql`.
 | | Bad_Loan_Percentage|
 |--------|-------|
 |1 | 13|
+
+## Loan Status 
+| | loan_status|Loan_Applications| Total_Funded_Amount|Total_Received_Amount|Interest_Rate|DTI
+|--------|-------|--------|-------|--------|-------|-------|
+|1 | Fully Paid|32145|351358350|411586256|11.6|13.2|
+|2|Current|1098|18866500|24199914|15.1|14.7|
+|3|Charged Off|5333|65532225|37284763|13.9|14|
+
+
+
+
+
