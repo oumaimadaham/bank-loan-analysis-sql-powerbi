@@ -16,7 +16,7 @@ WHERE MONTH(issue_date) = 11
   AND YEAR(issue_date) = 2021;
 
 -- Total Funded Amount
-SELECT SUM(loan_amount) AS Total_Loan_Amount 
+SELECT SUM(loan_amount) AS Total_Funded_Amount 
 FROM Loan;
 
 -- Total Funded Amount Month-to-Date (MTD)
@@ -85,7 +85,7 @@ FROM Loan
 WHERE loan_status IN ('Fully Paid', 'Current');
 
 -- Good Loan Funded Amount 
-SELECT SUM(loan_amount) AS Good_Loan_Amount
+SELECT SUM(loan_amount) AS Good_Loan_Funded_Amount
 FROM Loan
 WHERE loan_status IN ('Fully Paid', 'Current');
 
