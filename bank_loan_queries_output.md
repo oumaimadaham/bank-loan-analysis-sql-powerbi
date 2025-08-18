@@ -88,7 +88,7 @@ This file contains the results of all SQL queries from `bank_loan_queries.sql`.
 ## Good Loan Funded Amount
 | Good_Loan_Funded_Amount|
 |-------|
-|1 | 370224850|
+| 370224850|
 
 ## Good Loan Received Amount
 | Good_Loan_Received_Amount|
