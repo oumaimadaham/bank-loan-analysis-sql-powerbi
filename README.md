@@ -11,7 +11,7 @@ Bank loans are critical financial tools that help individuals and businesses ach
 However, banks must carefully **assess risk** and borrowers must understand **terms, costs, and responsibilities**.  
 
 ## Dataset
-**File:** `financial_loan.xlsx`  
+**File:** `bank_loan.xlsx`  
 **Size:** = `38,576` loan application records  
 **Source:** Simulated banking dataset 
 
