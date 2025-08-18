@@ -50,8 +50,20 @@ This file contains the results of all SQL queries from `bank_loan_queries.sql`.
 |--------|-------|
 |1 | 50132030 |
 
+## Average Interest Rate
+| | Average_Interest_Rate |
+|--------|-------|
+|1 | 12.1 |
 
+## Average Interest Rate Month-to-Date (MTD)
+| | MTD_Average_Interest_Rate |
+|--------|-------|
+|1 | 12.4 |
 
+## Average Interest Rate Previous Month (PMTD)
+| | PMTD_Average_Interest_Rate |
+|--------|-------|
+|1 | 11.9 |
 
 
 
