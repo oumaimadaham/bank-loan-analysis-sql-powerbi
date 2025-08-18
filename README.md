@@ -36,7 +36,7 @@ However, banks must carefully **assess risk** and borrowers must understand **te
 | `total_payment`     | Total amount received from the borrower |
 
 ##  SQL Analysis
-All queries are available in **`sql/loan_dashboard_queries.sql`**.
+All queries are available in **`bank_loan_queries.sql`**.
 
 ## Extracted Metrics
 - **Overall KPIs**
