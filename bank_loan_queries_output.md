@@ -80,4 +80,24 @@ This file contains the results of all SQL queries from `bank_loan_queries.sql`.
 |--------|-------|
 |1 | 13.3 |
 
+## Good Loan Applications
+| | Good_Loan_Applications|
+|--------|-------|
+|1 | 33243|
+
+## Good Loan Funded Amount
+| | Good_Loan_Funded_Amount|
+|--------|-------|
+|1 | 370224850|
+
+## Good Loan Received Amount
+| | Good_Loan_Received_Amount|
+|--------|-------|
+|1 | 435786170|
+
+## Good Loan Percentage
+| | Good_Loan_Percentage|
+|--------|-------|
+|1 | 86|
+
 
