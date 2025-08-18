@@ -100,4 +100,22 @@ This file contains the results of all SQL queries from `bank_loan_queries.sql`.
 |--------|-------|
 |1 | 86|
 
+## Bad Loan Applications
+| | Bad_Loan_Applications|
+|--------|-------|
+|1 | 5333|
 
+## Bad Loan Funded Amount
+| | Bad_Loan_Funded_Amount|
+|--------|-------|
+|1 | 65532225|
+
+## Bad Loan Received Amount
+| | Bad_Loan_Received_Amount|
+|--------|-------|
+|1 | 37284763|
+
+## Bad Loan Percentage
+| | Bad_Loan_Percentage|
+|--------|-------|
+|1 | 13|
