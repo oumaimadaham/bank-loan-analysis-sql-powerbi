@@ -14,5 +14,19 @@ This file contains the results of all SQL queries from `bank_loan_queries.sql`.
 |--------|-------|
 |1 | 435757075 |
 
+## Total Loan Amount Month-to-Date (MTD)
+| | MTD_Total_Loan_Amount|
+|--------|-------|
+|1 | 53981425 |
+
+## Total Loan Amount Previous Month (PMTD)
+| | PMTD_Total_Loan_Amount |
+|--------|-------|
+|1 | 47754825 |
+
+
+
+
+
 
 
