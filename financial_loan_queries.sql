@@ -31,7 +31,6 @@ FROM Loan
 WHERE MONTH(issue_date) = 11
   AND YEAR(issue_date) = 2021;
 
-
 -- Average Interest Rate
 SELECT ROUND(AVG(int_rate), 3) AS Average_Interest_Rate
 FROM Loan;
@@ -52,7 +51,6 @@ WHERE MONTH(issue_date) = 11
 SELECT ROUND(AVG(dti), 3) AS Average_DTI
 FROM Loan;
 
-
 -- Average DTI Month-to-Date (MTD)
 SELECT ROUND(AVG(dti), 3) AS MTD_Average_DTI
 FROM Loan
@@ -65,18 +63,17 @@ FROM Loan
 WHERE MONTH(issue_date) = 11 
   AND YEAR(issue_date) = 2021;
 
-
 -- Good Loan Applications 
 SELECT COUNT(ID) AS Good_Loan_Application
 FROM Loan
 WHERE loan_status IN ('Fully Paid', 'Current');
 
--- Good Loan Funded Amount (SUM of loan_amount)
+-- Good Loan Funded Amount 
 SELECT SUM(loan_amount) AS Good_Loan_Amount
 FROM Loan
 WHERE loan_status IN ('Fully Paid', 'Current');
 
--- Good Loan Received Amount (SUM of total_payment)
+-- Good Loan Received Amount 
 SELECT SUM(total_payment) AS Good_Loan_Received_Amount
 FROM Loan
 WHERE loan_status IN ('Fully Paid', 'Current');
@@ -87,8 +84,60 @@ SELECT
     / COUNT(ID) AS Good_Loan_Percentage
 FROM Loan;
 
+-- Loan Status 
+SELECT 
+    loan_status,
+    COUNT(ID) AS Loan_Applications,
+    SUM(loan_amount) AS Total_Funded_Amount,
+    SUM(total_payment) AS Total_Received_Amount,
+    ROUND(AVG(int_rate), 3) * 100 AS Interest_Rate,
+    ROUND(AVG(dti), 3) * 100 AS DTI
+FROM Loan
+GROUP BY loan_status;
 
 
+-- Loan Status Metrics Month-to-Date (MTD)
+SELECT 
+    loan_status,
+    SUM(loan_amount) AS MTD_Total_Funded_Amount,
+    SUM(total_payment) AS MTD_Total_Received_Amount
+FROM Loan
+WHERE MONTH(issue_date) = 12
+GROUP BY loan_status;
 
+-- Monthly Loan Metrics
+SELECT 
+    DATENAME(MONTH, issue_date) AS Month,
+    COUNT(ID) AS Total_Loan_Applications,
+    SUM(loan_amount) AS Total_Funded_Amount,
+    SUM(total_payment) AS Total_Received_Amount
+FROM Loan
+GROUP BY DATENAME(MONTH, issue_date)
+ORDER BY DATENAME(MONTH, issue_date) ASC;
 
+-- Loan Metrics by City/State
+SELECT 
+    address_state AS City,
+    COUNT(ID) AS Total_Loan_Applications,
+    SUM(loan_amount) AS Total_Funded_Amount,
+    SUM(total_payment) AS Total_Received_Amount
+FROM Loan
+GROUP BY address_state;
 
+-- Loan Metrics by Term (36/60 Months)
+SELECT 
+    term AS Term,
+    COUNT(ID) AS Total_Loan_Applications,
+    SUM(loan_amount) AS Total_Funded_Amount,
+    SUM(total_payment) AS Total_Received_Amount
+FROM Loan
+GROUP BY term;
+
+-- Loan Metrics by Employment Length
+SELECT 
+    emp_length AS Employment_Length,
+    COUNT(ID) AS Total_Loan_Applications,
+    SUM(loan_amount) AS Total_Funded_Amount,
+    SUM(total_payment) AS Total_Received_Amount
+FROM Loan
+GROUP BY emp_length;
