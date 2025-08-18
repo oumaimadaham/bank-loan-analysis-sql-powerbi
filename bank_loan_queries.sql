@@ -48,33 +48,33 @@ WHERE MONTH(issue_date) = 11
   AND YEAR(issue_date) = 2021;
 
 -- Average Interest Rate
-SELECT ROUND(AVG(int_rate), 3) AS Average_Interest_Rate
+SELECT ROUND(AVG(int_rate), 3)*100 AS Average_Interest_Rate
 FROM Loan;
 
 -- Average Interest Rate Month-to-Date (MTD)
-SELECT ROUND(AVG(int_rate), 3) AS MTD_Average_Interest_Rate
+SELECT ROUND(AVG(int_rate), 3)*100 AS MTD_Average_Interest_Rate
 FROM Loan
 WHERE MONTH(issue_date) = 12
   AND YEAR(issue_date) = 2021;
 
 -- Average Interest Rate Previous Month (PMTD)
-SELECT ROUND(AVG(int_rate), 3) AS PMTD_Average_Interest_Rate
+SELECT ROUND(AVG(int_rate), 3)*100 AS PMTD_Average_Interest_Rate
 FROM Loan
 WHERE MONTH(issue_date) = 11
   AND YEAR(issue_date) = 2021;
 
 -- Average DTI (Debt-to-Income Ratio) overall
-SELECT ROUND(AVG(dti), 3) AS Average_DTI
+SELECT ROUND(AVG(dti), 3)*100 AS Average_DTI
 FROM Loan;
 
 -- Average DTI Month-to-Date (MTD)
-SELECT ROUND(AVG(dti), 3) AS MTD_Average_DTI
+SELECT ROUND(AVG(dti), 3)*100 AS MTD_Average_DTI
 FROM Loan
 WHERE MONTH(issue_date) = 12 
   AND YEAR(issue_date) = 2021;
 
 -- Average DTI Previous Month (PMTD)
-SELECT ROUND(AVG(dti), 3) AS PMTD_Average_DTI
+SELECT ROUND(AVG(dti), 3)*100 AS PMTD_Average_DTI
 FROM Loan
 WHERE MONTH(issue_date) = 11 
   AND YEAR(issue_date) = 2021;
