@@ -96,8 +96,10 @@ WHERE loan_status IN ('Fully Paid', 'Current');
 
 -- Good Loan Percentage
 SELECT 
-    (COUNT(CASE WHEN loan_status IN ('Fully Paid', 'Current') THEN ID END) * 100.0) 
-    / COUNT(ID) AS Good_Loan_Percentage
+    ROUND(
+        (COUNT(CASE WHEN loan_status IN ('Fully Paid', 'Current') THEN ID END) * 100.0) 
+        / COUNT(ID), 3
+    ) AS Good_Loan_Percentage
 FROM Loan;
 
 -- Loan Status 
