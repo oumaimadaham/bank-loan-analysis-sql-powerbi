@@ -63,7 +63,7 @@ FROM Loan
 WHERE MONTH(issue_date) = 11
   AND YEAR(issue_date) = 2021;
 
--- Average DTI (Debt-to-Income Ratio) overall
+-- Average DTI  
 SELECT ROUND(AVG(dti), 3)*100 AS Average_DTI
 FROM Loan;
 
