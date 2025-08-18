@@ -141,3 +141,23 @@ SELECT
     SUM(total_payment) AS Total_Received_Amount
 FROM Loan
 GROUP BY emp_length;
+
+-- Loan Metrics by Purpose
+SELECT 
+    purpose AS Purpose,
+    COUNT(ID) AS Total_Loan_Applications,
+    SUM(loan_amount) AS Total_Funded_Amount,
+    SUM(total_payment) AS Total_Received_Amount
+FROM Loan
+GROUP BY purpose
+ORDER BY COUNT(ID) ASC;
+
+-- Loan Metrics by Home Ownership
+SELECT 
+    home_ownership AS Home_Ownership,
+    COUNT(ID) AS Total_Loan_Applications,
+    SUM(loan_amount) AS Total_Funded_Amount,
+    SUM(total_payment) AS Total_Received_Amount
+FROM Loan
+GROUP BY home_ownership
+ORDER BY COUNT(ID) ASC;
