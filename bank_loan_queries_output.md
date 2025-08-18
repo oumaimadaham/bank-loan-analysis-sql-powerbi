@@ -5,65 +5,65 @@ This file contains the results of all SQL queries from `bank_loan_queries.sql`.
 ---
 
 ## Total Loan Applications
-| | Total_Loan_Applications|
-|--------|-------|
-|1 | 38576 |
+| Total_Loan_Applications|
+|-------|
+| 38576 |
 
 ## Total Loan Applications Month-to-Date (MTD)
-| | MTD_Total_Applications |
-|--------|-------|
-|1 | 4314 |
+| MTD_Total_Applications |
+|-------|
+| 4314 |
 
 ## Total Loan Applications Previous Month (PMTD)
-| | PMTD_Total_Applications|
-|--------|-------|
-|1 | 4035 |
+| PMTD_Total_Applications|
+|-------|
+| 4035 |
 
 
 ## Total Funded Amount
-| | Total_Funded_Amount|
-|--------|-------|
-|1 | 435757075 |
+| Total_Funded_Amount|
+|-------|
+| 435757075 |
 
 ## Total Funded Amount Month-to-Date (MTD)
-| | MTD_Total_Funded_Amount|
-|--------|-------|
-|1 | 53981425 |
+| MTD_Total_Funded_Amount|
+|-------|
+| 53981425 |
 
 ## Total Funded Amount Previous Month (PMTD)
-| | PMTD_Total_Funded_Amount |
-|--------|-------|
-|1 | 47754825 |
+| PMTD_Total_Funded_Amount |
+|-------|
+| 47754825 |
 
 ## Total Amount Received
-| | Total_Amount_Received|
-|--------|-------|
-|1 | 473070933 |
+| Total_Amount_Received|
+|-------|
+| 473070933 |
 
 ## Total Amount Received Month-to-Date (MTD)
-| | MTD_Total_Amount_Received|
-|--------|-------|
-|1 | 58074380 |
+| MTD_Total_Amount_Received|
+|-------|
+| 58074380 |
 
 ## Total Amount Received Previous Month (PMTD)
-| | PMTD_Total_Amount_Received |
-|--------|-------|
-|1 | 50132030 |
+| PMTD_Total_Amount_Received |
+|-------|
+| 50132030 |
 
 ## Average Interest Rate
-| | Average_Interest_Rate |
-|--------|-------|
-|1 | 12.1 |
+| Average_Interest_Rate |
+|-------|
+| 12.1 |
 
 ## Average Interest Rate Month-to-Date (MTD)
-| | MTD_Average_Interest_Rate |
-|--------|-------|
-|1 | 12.4 |
+| MTD_Average_Interest_Rate |
+|-------|
+| 12.4 |
 
 ## Average Interest Rate Previous Month (PMTD)
-| | PMTD_Average_Interest_Rate |
-|--------|-------|
-|1 | 11.9 |
+| PMTD_Average_Interest_Rate |
+|-------|
+| 11.9 |
 
 ## Average DTI 
 | | Average_DTI |
@@ -71,19 +71,19 @@ This file contains the results of all SQL queries from `bank_loan_queries.sql`.
 |1 | 13.3 |
 
 ## Average DTI Rate Month-to-Date (MTD)
-| | MTD_Average_DTI_Rate |
-|--------|-------|
-|1 | 13.7 |
+| MTD_Average_DTI_Rate |
+|-------|
+| 13.7 |
 
 ## Average DTI Rate Previous Month (PMTD)
-| | PMTD_Average_DTI_Rate |
-|--------|-------|
-|1 | 13.3 |
+| PMTD_Average_DTI_Rate |
+|-------|
+| 13.3 |
 
 ## Good Loan Applications
-| | Good_Loan_Applications|
-|--------|-------|
-|1 | 33243|
+| Good_Loan_Applications|
+|-------|
+| 33243|
 
 ## Good Loan Funded Amount
 | | Good_Loan_Funded_Amount|
@@ -91,19 +91,19 @@ This file contains the results of all SQL queries from `bank_loan_queries.sql`.
 |1 | 370224850|
 
 ## Good Loan Received Amount
-| | Good_Loan_Received_Amount|
-|--------|-------|
-|1 | 435786170|
+| Good_Loan_Received_Amount|
+|-------|
+| 435786170|
 
 ## Good Loan Percentage
-| | Good_Loan_Percentage|
-|--------|-------|
-|1 | 86|
+| Good_Loan_Percentage|
+|-------|
+| 86|
 
 ## Bad Loan Applications
-| | Bad_Loan_Applications|
-|--------|-------|
-|1 | 5333|
+| Bad_Loan_Applications|
+|-------|
+| 5333|
 
 ## Bad Loan Funded Amount
 | | Bad_Loan_Funded_Amount|
@@ -111,14 +111,14 @@ This file contains the results of all SQL queries from `bank_loan_queries.sql`.
 |1 | 65532225|
 
 ## Bad Loan Received Amount
-| | Bad_Loan_Received_Amount|
-|--------|-------|
-|1 | 37284763|
+| Bad_Loan_Received_Amount|
+|-------|
+| 37284763|
 
 ## Bad Loan Percentage
-| | Bad_Loan_Percentage|
-|--------|-------|
-|1 | 13|
+| Bad_Loan_Percentage|
+|-------|
+| 13|
 
 ## Loan Status 
 | loan_status|Loan_Applications| Total_Funded_Amount|Total_Received_Amount|Interest_Rate|DTI
@@ -245,3 +245,12 @@ This file contains the results of all SQL queries from `bank_loan_queries.sql`.
 | other               | 3824   | 31,155,750 | 33,289,676 |
 | credit card         | 4998   | 58,885,175 | 65,214,084 |
 | Debt consolidation  | 18214  | 232,459,675| 253,801,871 |
+
+## Loan Metrics by Home Ownership
+| Home Ownership | Total Loan Applications | Total Funded Amount | Total Received Amount |
+|----------------|------------------------|-------------------|--------------------|
+| NONE           | 3      | 16,800       | 19,053       |
+| OTHER          | 98     | 1,044,975    | 1,025,257    |
+| OWN            | 2,838  | 29,597,675   | 31,729,129   |
+| MORTGAGE       | 17,198 | 219,329,150  | 238,474,438  |
+| RENT           | 18,439 | 185,768,475  | 201,823,056  |
