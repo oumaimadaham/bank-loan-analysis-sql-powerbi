@@ -102,6 +102,29 @@ SELECT
     ) AS Good_Loan_Percentage
 FROM Loan;
 
+-- Bad Loan Applications
+SELECT COUNT(ID) AS Bad_Loan_Application
+FROM Loan
+WHERE loan_status = 'Charged Off';
+
+-- Bad Loan Funded Amount
+SELECT SUM(loan_amount) AS Bad_Loan_Funded_Amount
+FROM Loan
+WHERE loan_status = 'Charged Off';
+
+-- Bad Loan Received Amount
+SELECT SUM(total_payment) AS Bad_Loan_Received_Amount
+FROM Loan
+WHERE loan_status = 'Charged Off';
+
+-- Bad Loan Percentage
+SELECT 
+    ROUND(
+        (COUNT(CASE WHEN loan_status = 'Charged Off' THEN ID END) * 100.0) 
+        / COUNT(ID), 3
+    ) AS Bad_Loan_Percentage
+FROM Loan;
+
 -- Loan Status 
 SELECT 
     loan_status,
