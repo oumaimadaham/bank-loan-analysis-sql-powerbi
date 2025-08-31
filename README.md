@@ -155,7 +155,7 @@ These visuals allow financial institutions to:
 - **xlsx dataset** – Loan records  
 
 ##  Key Findings
-**1.** Good loans dominate the portfolio; bad loans are low.
+**1.** Good loans dominate the portfolio, bad loans are low.
 
 **2.** Debt consolidation and credit card loans are the most common.
 
